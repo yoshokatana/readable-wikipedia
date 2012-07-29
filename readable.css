@@ -1,0 +1,107 @@
+/* Base Wikipedia Enhancement */
+
+a, a:visited {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+.reference {
+  display: none !important;
+}
+
+#mw-panel {
+  display: none !important;
+}
+
+#mw-head {
+  margin: 0 auto !important;
+  background-color: #C91818 !important;
+  background-color: white !important;
+  border-bottom: 1px solid #4D0000 !important;
+  padding-bottom: 13px !important;
+}
+
+#mw-head-base {
+  background-image: none !important;
+}
+
+div#content {
+  width: 800px !important;
+  margin: 0 auto !important;
+  background: none !important;
+  padding: 4.25em 1.5em 1.5em 1.5em !important;
+}
+
+#mw-page-base {
+  height: auto !important;
+}
+
+#siteSub {
+  display: none !important;
+}
+
+#p-personal {
+  display: none !important;
+}
+
+#left-navigation {
+  display: none !important;
+}
+
+#right-navigation {
+  margin-top: 0px !important;
+}
+
+#p-views {
+  display: none !important;
+}
+
+#mw-body {
+  margin-left: 0px !important;
+}
+
+#protected-icon {
+  display: none !important;
+}
+
+.dablink {
+  display: none !important;
+}
+
+#mw-articlefeedback {
+  display: none !important;
+}
+
+.editsection {
+  display: none !important;
+}
+
+/* Reading Enhacements */
+
+* {
+  line-height: 1.7em !important;
+}
+
+p {
+  font-size: 1.2em !important;
+  margin-top: 1.4em !important;
+}
+
+/* File Enhancements */
+#filetoc {
+  display: none !important;
+}
+
+#file img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+.fullMedia, .sharedUploadNotice, #mw-imagepage-section-linkstoimage, #filelinks, #mw-imagepage-section-filehistory, #filehistory, #mw-imagepage-section-globalusage, #globalusage, #mw-imagepage-content, #template-picture-of-the-day, #metadata, .mw-imagepage-section-metadata {
+  display: none !important;
+}
+
+/* Scripted in styles */
+#logo {
+  margin: .5em auto auto 1em;
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Readable Wikipedia",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Enhacements to wikipedia to increase its readability.",
+  "content_scripts": [
+    {
+      "matches": ["http://en.wikipedia.org/wiki/*"],
+      "css": ["readable.css"],
+      "js": ["jquery.js", "enhancements.js"]
+    }
+  ],
+  "permissions": [
+    "tabs", "http://en.wikipedia.org/wiki/*"
+  ]
+}
