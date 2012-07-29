@@ -7,7 +7,7 @@
     {
       "matches": ["http://en.wikipedia.org/wiki/*"],
       "css": ["readable.css"],
-      "js": ["jquery.js", "enhancements.js"]
+      "js": ["jquery.js", "jquery.hotkeys.js", "enhancements.js"]
     }
   ],
   "permissions": [

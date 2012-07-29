@@ -9,15 +9,18 @@ a, a:visited {
   display: none !important;
 }
 
+.internal {
+  display: none !important;
+}
+
 #mw-panel {
   display: none !important;
 }
 
 #mw-head {
   margin: 0 auto !important;
-  background-color: #C91818 !important;
   background-color: white !important;
-  border-bottom: 1px solid #4D0000 !important;
+  border-bottom: 1px solid #AAA !important;
   padding-bottom: 13px !important;
 }
 
@@ -32,11 +35,32 @@ div#content {
   padding: 4.25em 1.5em 1.5em 1.5em !important;
 }
 
+h2 {
+  margin-top: 2em !important;
+}
+
 #mw-page-base {
   height: auto !important;
 }
 
 #siteSub {
+  display: none !important;
+}
+
+.metadata {
+  display: none !important;
+}
+
+.catlinks {
+  display: none !important;
+}
+
+.topicon {
+  display: none !important;
+  right: 9999px !important;
+}
+
+#coordinates {
   display: none !important;
 }
 
@@ -76,6 +100,33 @@ div#content {
   display: none !important;
 }
 
+#footer {
+  text-align: center !important;
+  background: none !important;
+  margin: 0 0 !important;
+  background-color: white !important;
+  border-top: 1px solid #AAA !important;
+}
+
+#footer-places {
+  display: none !important;
+}
+
+#footer img {
+  display: none !important;
+}
+
+
+/* I'm really not sure about this change,
+ * Eventually I'd like the TOC accessible
+ * via a side menu, for now this is experimental
+ * and might change
+*/
+
+#toc {
+  display: none !important;
+}
+
 /* Reading Enhacements */
 
 * {
@@ -88,6 +139,8 @@ p {
 }
 
 /* File Enhancements */
+
+
 #filetoc {
   display: none !important;
 }
@@ -97,11 +150,26 @@ p {
   height: auto !important;
 }
 
-.fullMedia, .sharedUploadNotice, #mw-imagepage-section-linkstoimage, #filelinks, #mw-imagepage-section-filehistory, #filehistory, #mw-imagepage-section-globalusage, #globalusage, #mw-imagepage-content, #template-picture-of-the-day, #metadata, .mw-imagepage-section-metadata {
+.fullMedia, .sharedUploadNotice, #mw-imagepage-section-linkstoimage, #filelinks, #mw-imagepage-section-filehistory, #filehistory, #mw-imagepage-section-globalusage, #globalusage, #mw-imagepage-content, #template-picture-of-the-day, #metadata, .mw-imagepage-section-metadata, .mw-filepage-resolutioninfo {
   display: none !important;
 }
+
+/* Also not sure about this since it removes
+ * everything!  Maybe that's a good thing
+ * but if I was researching I might miss some
+ * of the copyright info, good candidate for
+ * keyboard shortcut...?
+ */
 
 /* Scripted in styles */
 #logo {
   margin: .5em auto auto 1em;
+}
+
+.visible-link {
+  color: #2B77BD !important;
+}
+
+#enhancement_credit {
+  font-size: 12px !important;
 }

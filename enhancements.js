@@ -6,7 +6,23 @@ $('#mw-head').append('\
   </div>\
 ');
 
+$('#footer').prepend('\
+ <p id="enhancement_credit">The readability of this page is enhacemented by <a href="http://dcxn.com">Nick Rowe</a></li>\
+');
+
 if(window.location.href.match(/File/))
 {
+   $('#shared-image-desc').hide();
+
   $('.firstHeading span').text($('.description').first().text());
+
+  $(document).bind('keydown.i', function() {
+    $('#shared-image-desc').toggle();
+  });
 }
+
+$(document).bind('keydown.a', function() { 
+  $('a').toggleClass('visible-link'); 
+});
+
+
