@@ -116,6 +116,9 @@ h2 {
   display: none !important;
 }
 
+.tleft {
+  margin: 1.5em 1.4em 1.3em 0 !important;
+}
 
 /* I'm really not sure about this change,
  * Eventually I'd like the TOC accessible
@@ -154,13 +157,6 @@ p {
   display: none !important;
 }
 
-/* Also not sure about this since it removes
- * everything!  Maybe that's a good thing
- * but if I was researching I might miss some
- * of the copyright info, good candidate for
- * keyboard shortcut...?
- */
-
 /* Scripted in styles */
 #logo {
   margin: .5em auto auto 1em;
@@ -172,4 +168,46 @@ p {
 
 #enhancement_credit {
   font-size: 12px !important;
+}
+
+.mobile {
+  display: none !important;
+}
+
+/* Responsive breakpoints */
+
+@media screen and (max-width: 850px) {
+  div#content {
+    width: 600px !important;
+  }
+  .thumb, .tright, .left {
+    display: block !important;
+    float: none !important;
+  }
+  #mw-articlefeedbackv5 {
+    display: none !important;
+ }
+}
+
+@media screen and (max-width: 650px) {
+  div#content {
+    width: 320px !important;
+  }
+  #firstHeading {
+    width: 100% !important;
+  }
+
+  .desktop {
+    display: none !important;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+
+  .infobox {
+    display: block !important;
+    float: none !important;
+    margin: 1em auto !important;
+   }
 }

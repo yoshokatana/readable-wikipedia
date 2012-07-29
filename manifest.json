@@ -10,6 +10,10 @@
       "js": ["jquery.js", "jquery.hotkeys.js", "enhancements.js"]
     }
   ],
+  "icons": { 
+    "48": "icon_48.png",
+    "128": "icon_128.png"
+  },
   "permissions": [
     "tabs", "http://en.wikipedia.org/wiki/*"
   ]
