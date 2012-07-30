@@ -1,5 +1,7 @@
 # Readable Wikipedia
 
+![Example of Readable Wikipedia](example-screenshot.png)
+
 This is a Chrome extension to bring increased readability to wikipedia.
 
 # Author
