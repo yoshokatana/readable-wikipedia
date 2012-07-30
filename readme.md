@@ -1,6 +1,6 @@
 # Readable Wikipedia
 
-![Example of Readable Wikipedia](example-screenshot.png)
+![Example of Readable Wikipedia](https://github.com/nixterrimus/readable-wikipedia/raw/master/example-screenshot.png)
 
 This is a Chrome extension to bring increased readability to wikipedia.
 
