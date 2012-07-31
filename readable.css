@@ -55,6 +55,14 @@ h2 {
   display: none !important;
 }
 
+.Template-Fact {
+  display: none !important;
+}
+
+div#content a.external {
+  background: none !important;
+}
+
 .topicon {
   display: none !important;
   right: 9999px !important;

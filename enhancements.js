@@ -26,4 +26,7 @@ $(document).bind('keydown.a', function() {
   $('a').toggleClass('visible-link'); 
 });
 
-
+$(document).bind('keydown.i', function() {
+  $('.infobox, .vertical-navbox, .navbox, .succession-box, .toccolours, .wikitable').toggle();
+  $('#content .thumb').toggle();
+});
