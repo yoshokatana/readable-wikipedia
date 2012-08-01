@@ -1,8 +1,8 @@
 $('#mw-head').append('\
  <div id="logo">\
     <a href="/">\
-      <img src="http://bits.wikimedia.org/static-1.20wmf7/extensions/MobileFrontend/stylesheets/images/logo-copyright-en.png" class="desktop">\
-      <img src="http://upload.wikimedia.org/wikipedia/commons/8/84/W_logo_for_Mobile_Frontend.gif" class="mobile">\
+      <img src="chrome-extension://nppnjllnfpmkoefedgknkjimmcoklnka/images/desktop.png" class="desktop">\
+      <img src="chrome-extension://nppnjllnfpmkoefedgknkjimmcoklnka/images/mobile.gif" class="mobile">\
     </a>\
   </div>\
 ');
@@ -26,7 +26,28 @@ $(document).bind('keydown.a', function() {
   $('a').toggleClass('visible-link'); 
 });
 
+var extraRemovables = [$('.infobox'), $('.vertical-navbox'), $('.navbox'), $('.succession-box'), $('.toccolours'), $('.wikitable'), $('#content .thumb')];
+
+var hidden = false;
+
+
 $(document).bind('keydown.i', function() {
-  $('.infobox, .vertical-navbox, .navbox, .succession-box, .toccolours, .wikitable').toggle();
-  $('#content .thumb').toggle();
+  if (hidden) {
+    $.each(extraRemovables, function(index, elements){
+      elements.css('display', 'block');
+    });
+  } else {
+    $.each(extraRemovables, function(index, elements){
+      elements.css('display', 'none');
+    });
+  }
+  hidden = !hidden;
+});
+
+$(document).bind('keydown.j', function() {
+  window.scrollBy(0,30);
+});
+
+$(document).bind('keydown.k', function() {
+  window.scrollBy(0,-30);
 });
