@@ -1,6 +1,6 @@
 {
   "name": "Readable Wikipedia",
-  "version": "1.0",
+  "version": "1.3",
   "manifest_version": 2,
   "description": "Enhacements to wikipedia to increase its readability.",
   "content_scripts": [
