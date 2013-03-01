@@ -73,6 +73,10 @@ div#content a.external {
   right: 9999px !important;
 }
 
+.icone_de_titre {
+  display: none !important;
+}
+
 #coordinates {
   display: none !important;
 }
