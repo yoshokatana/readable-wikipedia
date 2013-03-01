@@ -9,11 +9,10 @@
       "128": "icon_128.png",
       "48": "icon_48.png"
    },
-   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDS6y2JtcnR74dD9KUqfQK+moKkXiavkPLGUat1rkWWAEvU4Jb8zYbPE++AVyhsef60RW75Q5xPcxZ5CdTEy0nLvmOD/Zp95MzYr9DViKlToXYlSxFxW/Vu+HFq8J64/y1tTI+yd5JYQo97q/31LaNJ08PKhi7c/qYJJKiqEk6SowIDAQAB",
    "manifest_version": 2,
    "name": "Wikipedia Readability",
    "permissions": [ "tabs", "http://en.wikipedia.org/wiki/*" ],
    "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.4",
+   "version": "1.5",
    "web_accessible_resources": [ "images/desktop.png", "images/mobile.gif" ]
 }
