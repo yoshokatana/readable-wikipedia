@@ -33,6 +33,11 @@ div#content {
   margin: 0 auto !important;
   background: none !important;
   padding: 4.25em 1.5em 1.5em 1.5em !important;
+  border: none !important;
+}
+
+#siteNotice {
+  display: none !important;
 }
 
 h2 {
