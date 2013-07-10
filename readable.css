@@ -187,6 +187,10 @@ p {
   font-size: 12px !important;
 }
 
+.mw-editsection {
+  display: none !important;
+}
+
 .mobile {
   display: none !important;
 }
