@@ -5,7 +5,7 @@
   "description": "Enhacements to wikipedia to increase its readability.",
   "content_scripts": [
     {
-      "matches": ["http://*.wikipedia.org/wiki/*"],
+      "matches": ["*://*.wikipedia.org/wiki/*"],
       "css": ["readable.css"],
       "js": ["jquery.js", "jquery.hotkeys.js", "enhancements.js"]
     }
@@ -19,6 +19,6 @@
     "images/mobile.gif"
   ],
   "permissions": [
-    "tabs", "http://*.wikipedia.org/wiki/*"
+    "tabs", "*://*.wikipedia.org/wiki/*"
   ]
 }
