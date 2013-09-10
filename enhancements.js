@@ -1,15 +1,25 @@
+snapper = new Snap({
+  element: document.getElementById('content')
+});
+
+$('body').prepend('<div class="snap-drawer snap-drawer-left">CONTENT</div>');
+
 $('#mw-head').append('\
  <div id="logo">\
-    <a href="/">\
       <img src="http://upload.wikimedia.org/wikipedia/commons/8/84/W_logo_for_Mobile_Frontend.gif" class="desktop">\
       <img src="http://upload.wikimedia.org/wikipedia/commons/8/84/W_logo_for_Mobile_Frontend.gif" class="mobile">\
-    </a>\
   </div>\
 ');
 
-$('#footer').prepend('\
- <p id="enhancement_credit">The readability of this page is enhanced by <a href="http://dcxn.com">Nick Rowe</a></li>\
-');
+$('#mw-head #logo').bind('click', function(){
+  if( snapper.state().state=="left" ){
+    snapper.close();
+  } else {
+    snapper.open('left');
+  }
+});
+
+$('#footer').prepend('<p id="enhancement_credit">The readability of this page is enhanced by <a href="http://dcxn.com">Nick Rowe</a></li>');
 
 if(window.location.href.match(/File/))
 {

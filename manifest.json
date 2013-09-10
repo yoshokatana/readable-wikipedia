@@ -6,8 +6,8 @@
   "content_scripts": [
     {
       "matches": ["*://*.wikipedia.org/wiki/*"],
-      "css": ["readable.css"],
-      "js": ["jquery.js", "jquery.hotkeys.js", "enhancements.js"]
+      "css": ["snap.css", "readable.css"],
+      "js": ["jquery.js", "jquery.hotkeys.js", "snap.min.js", "enhancements.js"]
     }
   ],
   "icons": { 
