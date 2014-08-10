@@ -24,6 +24,7 @@ To install this extension from source, clone it.  Then in Chrome go to `tools ->
 ## Author
 
 Readable Wikipedia is by [Nick Rowe][Nick's Homepage]
+
 Edits and Enhancements by [Nelson Pecora][Nelson's Homepage]
 
 [Nick's Homepage]: http://dcxn.com
