@@ -1,53 +1,37 @@
-$('#mw-head').append('\
- <div id="logo">\
-    <a href="/">\
-      <img src="http://upload.wikimedia.org/wikipedia/commons/8/84/W_logo_for_Mobile_Frontend.gif" class="desktop">\
-      <img src="http://upload.wikimedia.org/wikipedia/commons/8/84/W_logo_for_Mobile_Frontend.gif" class="mobile">\
-    </a>\
-  </div>\
-');
+document.querySelector('html').classList.add('readable');
 
-$('#footer').prepend('\
- <p id="enhancement_credit">The readability of this page is enhanced by <a href="http://dcxn.com">Nick Rowe</a></li>\
-');
+var links = document.querySelectorAll('a');
 
-if(window.location.href.match(/File/))
-{
-   $('#shared-image-desc').hide();
+function toggleLinks() {
+  // toggle the blackout class
+  for (var i=0, l=links.length; i<l; i++) {
+    var link = links[i];
 
-  $('.firstHeading').hide();
-
-  $(document).bind('keydown.i', function() {
-    $('#shared-image-desc').toggle();
-  });
+    if (link.classList.contains('blackout')) {
+      link.classList.remove('blackout');
+    } else {
+      link.classList.add('blackout');
+    }
+  }
 }
 
-$(document).bind('keydown.a', function() { 
-  $('a').toggleClass('visible-link'); 
-});
+var isToggled = (localStorage.getItem('readable-wiki-blkout') && localStorage.getItem('readable-wiki-blkout') === '1') ? true : false;
 
-var extraRemovables = [$('.infobox'), $('.vertical-navbox'), $('.navbox'), $('.succession-box'), $('.toccolours'), $('.wikitable'), $('#content .thumb')];
+// on page load, check the link toggle state
+if (isToggled) {
+  toggleLinks();
+}
 
-var hidden = false;
+// toggle link hiding when pressing A
+window.addEventListener('keydown', function(e) {
+  toggleLinks();
 
-
-$(document).bind('keydown.i', function() {
-  if (hidden) {
-    $.each(extraRemovables, function(index, elements){
-      elements.css('display', 'block');
-    });
-  } else {
-    $.each(extraRemovables, function(index, elements){
-      elements.css('display', 'none');
-    });
-  }
-  hidden = !hidden;
-});
-
-$(document).bind('keydown.j', function() {
-  window.scrollBy(0,30);
-});
-
-$(document).bind('keydown.k', function() {
-  window.scrollBy(0,-30);
+  if (e.which === 65) {
+    // persist this with localStorage
+    if (isToggled) {
+      localStorage.setItem('readable-wiki-blkout', '0');
+    } else {
+      localStorage.setItem('readable-wiki-blkout', '1');
+    }
+  } 
 });
