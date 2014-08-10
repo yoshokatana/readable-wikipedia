@@ -1,8 +1,8 @@
 # Readable Wikipedia
 
-This is a Chrome extension to bring increased readability to wikipedia.
+This is a fork of [Nick Rowe][Nick's Homepage] Chrome extension to bring increased readability to wikipedia.
 
-You can install [Readable Wikipedia On The Chrome App Store][Chrome Store Link]
+You can install the original [Readable Wikipedia On The Chrome App Store][Chrome Store Link]
 
 ![Example of Readable Wikipedia][Example Screenshot]
 
@@ -10,15 +10,16 @@ The interface to wikipedia is designed to meet many different requirements.  On 
 
 The enhancements in this extension are for the reader.  They are designed to increase readability, remove distraction and create an experience where the reader may focus on the topic at hand and come away with a feeling of clarity.
 
-## Features
+## New Features
 
-For a complete list of features and the rationale behind them, please refer to [DCXN Lab page for Wikipedia Reader][DCXN Lab Page]
+* No JQuery dependency, limited keyboard shortcuts
+* Show link colors by default
+* Pressing "A" toggles the black+white mode, and this persists via localStorage
+* Added the Table of Contents
+* Restyled thumbnails, re-styled info boxes
+* Added the original wikipedia icon back in
 
-## Inspiration
-
-[![The Shallows By Nicholas Carr][The Shallows Image]][The Shallows Amazon Link]
-
-The improvements here are inspired by some of the ideas presented in [The Shallows][The Shallows Amazon Link] by Nicholas Carr.  The book outlines some of the ways that internet usage is changing our thought patterns, brain structure, and values.
+For the original feature list and the thinking behind them, visit the [DCXN Lab page for Wikipedia Reader][DCXN Lab Page]
 
 ## Installing From Source
 
@@ -27,12 +28,12 @@ To install this extension from source, clone it.  Then in Chrome go to `tools ->
 ## Author
 
 Readable Wikipedia is by [Nick Rowe][Nick's Homepage]
+Edits and Enhancements by [Nelson Pecora][Nelson's Homepage]
 
 
 
 [Nick's Homepage]: http://dcxn.com
+[Nelson's Homepage]: http://keats.me
 [DCXN Lab Page]: http://labs.dcxn.com/wikipedia
 [Chrome Store Link]: http://chrome.com
 [Example Screenshot]: https://github.com/nixterrimus/readable-wikipedia/raw/master/example-screenshot.png
-[The Shallows Amazon Link]: http://www.amazon.com/gp/product/0393339750/ref=as_li_qf_sp_asin_il?ie=UTF8&camp=1789&creative=9325&creativeASIN=0393339750&linkCode=as2&tag=d081a-20
-[The Shallows Image]: http://ecx.images-amazon.com/images/I/4197RTFGLFL._SL160_.jpg
