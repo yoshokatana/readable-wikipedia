@@ -1,6 +1,6 @@
 # Readable Wikipedia
 
-This is a fork of [Nick Rowe][Nick's Homepage] Chrome extension to bring increased readability to wikipedia.
+This is a fork of [Nick Rowe's][Nick's Homepage] Chrome extension that allows wikipedia to be actually readable.
 
 You can install the original [Readable Wikipedia On The Chrome App Store][Chrome Store Link]
 
@@ -15,7 +15,7 @@ You can install the original [Readable Wikipedia On The Chrome App Store][Chrome
 * Restyled thumbnails, re-styled info boxes
 * Added the original wikipedia icon back in
 
-For the original feature list and the thinking behind them, visit the [DCXN Lab page for Wikipedia Reader][DCXN Lab Page]
+For the original feature list and the thinking behind them, visit the [DCXN Lab page][DCXN Lab Page].
 
 ## Installing From Source
 
@@ -23,7 +23,7 @@ To install this extension from source, clone it.  Then in Chrome go to `tools ->
 
 ## Author
 
-Readable Wikipedia is by [Nick Rowe][Nick's Homepage]
+Readable Wikipedia by [Nick Rowe][Nick's Homepage]
 
 Edits and Enhancements by [Nelson Pecora][Nelson's Homepage]
 
