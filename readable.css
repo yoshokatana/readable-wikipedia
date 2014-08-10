@@ -186,6 +186,10 @@ div#content a.external {
   display: none !important;
 }
 
+#mw-fr-revisiontag {
+  display: none !important;
+}
+
 .tleft {
   margin: 1.5em 1.4em 1.3em 0 !important;
 }
