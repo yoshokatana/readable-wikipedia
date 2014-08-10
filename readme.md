@@ -6,10 +6,6 @@ You can install the original [Readable Wikipedia On The Chrome App Store][Chrome
 
 ![Example of Readable Wikipedia][Example Screenshot]
 
-The interface to wikipedia is designed to meet many different requirements.  On a typical page there are elements designed solely for many different kinds of users.  For editors there are 'edit this section' buttons and notes about the content ([citation needed]); for researchers there are footnotes; for machines there are GPS co-ordinates; and for wikipedians there marks of distinction (starred article).  With all of these different elements, however, one person who loses usability is the reader.  This is the person who is coming to Wikipedia to better understanding a concept.
-
-The enhancements in this extension are for the reader.  They are designed to increase readability, remove distraction and create an experience where the reader may focus on the topic at hand and come away with a feeling of clarity.
-
 ## New Features
 
 * No JQuery dependency, limited keyboard shortcuts
@@ -29,8 +25,6 @@ To install this extension from source, clone it.  Then in Chrome go to `tools ->
 
 Readable Wikipedia is by [Nick Rowe][Nick's Homepage]
 Edits and Enhancements by [Nelson Pecora][Nelson's Homepage]
-
-
 
 [Nick's Homepage]: http://dcxn.com
 [Nelson's Homepage]: http://keats.me
