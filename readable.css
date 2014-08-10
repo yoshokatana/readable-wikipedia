@@ -1,5 +1,9 @@
 /* Base Wikipedia Enhancement */
 
+a:visited {
+  color: #8406CA !important;
+}
+
 a.blackout,
 a.blackout:visited {
   text-decoration: none !important;
@@ -43,11 +47,16 @@ a.blackout:visited {
 }
 
 div#content {
-  width: 800px !important;
+  width: 720px !important;
   margin: 0 auto !important;
   background: none !important;
   padding: 4.25em 1.5em 1.5em 1.5em !important;
   border: none !important;
+}
+
+.infobox {
+  margin-left: 2em !important;
+  margin-bottom: 2em !important;
 }
 
 .infobox th {
@@ -142,6 +151,18 @@ div#content a.external {
   display: none !important;
 }
 
+/* thumbnails */
+.thumbinner {
+  border: none !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+}
+
+.thumbcaption {
+  color: #777 !important;
+  font-style: italic !important;
+}
+
 #footer {
   text-align: center !important;
   background: none !important;
@@ -161,12 +182,6 @@ div#content a.external {
 .tleft {
   margin: 1.5em 1.4em 1.3em 0 !important;
 }
-
-/* I'm really not sure about this change,
- * Eventually I'd like the TOC accessible
- * via a side menu, for now this is experimental
- * and might change
-*/
 
 #toc {
   display: none !important;
@@ -199,20 +214,7 @@ p {
   display: none !important;
 }
 
-/* Scripted in styles */
-#logo {
-  margin: .5em auto auto 1em;
-}
-
-#enhancement_credit {
-  font-size: 12px !important;
-}
-
 .mw-editsection {
-  display: none !important;
-}
-
-.mobile {
   display: none !important;
 }
 
@@ -220,7 +222,7 @@ p {
 
 @media screen and (max-width: 850px) {
   div#content {
-    width: 600px !important;
+    width: 80% !important;
   }
   .thumb, .tright, .left {
     display: block !important;
@@ -233,18 +235,10 @@ p {
 
 @media screen and (max-width: 650px) {
   div#content {
-    width: 320px !important;
+    width: 90% !important;
   }
   #firstHeading {
     width: 100% !important;
-  }
-
-  .desktop {
-    display: none !important;
-  }
-
-  .mobile {
-    display: block !important;
   }
 
   .infobox {
