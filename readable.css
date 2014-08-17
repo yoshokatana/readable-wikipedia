@@ -1,5 +1,11 @@
 /* Base Wikipedia Enhancement */
 
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 a:visited {
   color: #8406CA !important;
 }
@@ -105,8 +111,9 @@ h2 {
   display: none !important;
 }
 
-div#content a.external {
+div#content a.blackout.external {
   background: none !important;
+  padding-right: 0 !important;
 }
 
 .topicon {
