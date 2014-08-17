@@ -24,9 +24,8 @@ if (isToggled) {
 
 // toggle link hiding when pressing A
 window.addEventListener('keydown', function(e) {
-  toggleLinks();
-
-  if (e.which === 65) {
+  if (e.which === 65) { // 'A' key
+    toggleLinks();
     // persist this with localStorage
     if (isToggled) {
       localStorage.setItem('readable-wiki-blkout', '0');
